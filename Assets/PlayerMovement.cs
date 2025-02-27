@@ -12,9 +12,6 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = 10f;
     public float lookSpeed = 2f;
     public float lookXLimit = 45f;
-    public float defaultHeight = 2f;
-    public float crouchHeight = 1f;
-    public float crouchSpeed = 3f;
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
@@ -53,23 +50,7 @@ public class PlayerMovement : MonoBehaviour
         {
             moveDirection.y -= gravity * Time.deltaTime;
         }
-
-        if (Input.GetKey(KeyCode.E) && canMove)
-        {
-            characterController.height = crouchHeight;
-            walkSpeed = crouchSpeed;
-            runSpeed = crouchSpeed;
-
-        }
-        else
-        {
-            characterController.height = defaultHeight;
-            walkSpeed = 12f;
-            runSpeed = 24f;
-        }
-
         characterController.Move(moveDirection * Time.deltaTime);
-
         if (canMove)
         {
             rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;

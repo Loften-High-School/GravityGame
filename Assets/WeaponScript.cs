@@ -10,7 +10,7 @@ public class WeaponScript : MonoBehaviour
   public float FireCooldown;
   public bool Automatic;
   private float CurrentCooldown;
-  private Vector3 PlayerLocation=  new Vector3 (0f, 0f, 0f);
+  private Vector3 PlayerLocation=  new Vector3 (1.2f, -49.2f, 18.4f);
   //PlayerLocation =
   void Start()
   {

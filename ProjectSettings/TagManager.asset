@@ -6,6 +6,7 @@ TagManager:
   tags:
   - WorldObjectHolder
   - worldObjectHolder
+  - Laser
   layers:
   - Default
   - TransparentFX

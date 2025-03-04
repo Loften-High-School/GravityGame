@@ -28,12 +28,16 @@ public class Block : MonoBehaviour
                   Debug.Log("Blocking");
                   GenerateShield();
             }
+            else
+            {
+                 DestroyImmediate (Shield, true);
+            }
     }
      void GenerateShield()
      {
           Vector3 nextToPlayer; 
           nextToPlayer = transform.localPosition;
-          nextToPlayer = new Vector3 (2f,2f, 0f); 
+          //nextToPlayer = new Vector3 (2f,2f, 0f); 
          
          // = new Vector3(0, 0, 0);
          //Vector3 NextToPlayer = playerTransform;

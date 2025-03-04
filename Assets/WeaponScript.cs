@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-public class GunSystem : MonoBehaviour
+public class WeaponScript : MonoBehaviour
+
 {
+  [SerializeField] GameObject LargeLaser;
   public UnityEvent OnGunShoot;
   public float FireCooldown;
   public bool Automatic;
   private float CurrentCooldown;
+  private Vector3 PlayerLocation=  new Vector3 (0f, 0f, 0f);
+  //PlayerLocation =
   void Start()
   {
     CurrentCooldown = FireCooldown;
@@ -20,9 +24,11 @@ public class GunSystem : MonoBehaviour
       {
         if (CurrentCooldown <= 0f)
         {
+          
           OnGunShoot?.Invoke();
           CurrentCooldown = FireCooldown;
           Debug.Log("Shots Fired");
+          Instantiate(LargeLaser, PlayerLocation, Quaternion.identity);
         }
       }
     }

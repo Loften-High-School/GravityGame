@@ -7,6 +7,7 @@ TagManager:
   - WorldObjectHolder
   - worldObjectHolder
   - Laser
+  - Enemy
   layers:
   - Default
   - TransparentFX

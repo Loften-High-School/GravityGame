@@ -1,69 +1,9 @@
 fileFormatVersion: 2
-guid: 2d940f6adca7a480d9284c4e0bf8be84
+guid: 0ca6f7698fc924e4099bfd6cf5927c55
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface10
-    second: {fileID: 2100000, guid: d7b7963b46a144b09bd7419c2d688165, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface11
-    second: {fileID: 2100000, guid: 8a62d2e537f0e4c3e8abd1ae017e9d39, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface2
-    second: {fileID: 2100000, guid: 832d06a761f5540f7900fe947b976cae, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface3
-    second: {fileID: 2100000, guid: f63613f06d7854c99b5bfcc51eed6789, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface4
-    second: {fileID: 2100000, guid: 86712a9b8059042819fead59e21e22f6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface5
-    second: {fileID: 2100000, guid: 6c1988f5a3f3b4ffe8df82121f88e71a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface6
-    second: {fileID: 2100000, guid: bb96c0713791341018bf1184d80a0213, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface7
-    second: {fileID: 2100000, guid: 654b341d6f6884215891829b3e094b2f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface8
-    second: {fileID: 2100000, guid: 49f6b9934e1464e0e87aaad250edd2ee, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface9
-    second: {fileID: 2100000, guid: b9197343e3735444ea8dec7ae8af72da, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: depositphotos_107091400-stock-photo-shield-with-a-large-number
-    second: {fileID: 2800000, guid: db2efcda82c5b4273b11b3bebcf02163, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: download
-    second: {fileID: 2800000, guid: a1ec864f7a88149a8b9ea41bb15297bc, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -95,7 +35,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -150,7 +90,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.099999994
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

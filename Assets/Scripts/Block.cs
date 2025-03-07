@@ -41,7 +41,7 @@ public class Block : MonoBehaviour
          
          // = new Vector3(0, 0, 0);
          //Vector3 NextToPlayer = playerTransform;
-         Instantiate(Shield, nextToPlayer, Quaternion.identity ); 
+         Instantiate(Shield, nextToPlayer, Quaternion.identity);//, Transform.player); 
      }
 }
 

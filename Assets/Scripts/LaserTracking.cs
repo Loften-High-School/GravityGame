@@ -38,7 +38,7 @@ public class LaserScript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         // Check if the enemy collides with the player
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             // Get the PlayerHealth script and apply damage
            Destroy (gameObject);

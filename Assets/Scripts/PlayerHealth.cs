@@ -19,12 +19,6 @@ public class PlayerHealth : MonoBehaviour
             health = Mathf.Clamp(health, 0, maxHealth); // Make sure health doesn't go below 0
 
             Debug.Log("Player Health: " + health);
-
-            if (health <= 0)
-            {
-                Die();
-            }
-            else
             {
                 // Start cooldown to prevent taking damage too quickly
                 StartCoroutine(DamageCooldown());
@@ -44,5 +38,13 @@ public class PlayerHealth : MonoBehaviour
         canTakeDamage = false;
         yield return new WaitForSeconds(damageCooldown);
         canTakeDamage = true;
+    }
+    void Update()
+    {
+
+            if (health <= 0)
+            {
+                Die();
+            }
     }
 }

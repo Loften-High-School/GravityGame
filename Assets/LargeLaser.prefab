@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3473280414157226929}
   - component: {fileID: 6649728263194425342}
   - component: {fileID: 1975983578775947295}
+  - component: {fileID: 799207680420723749}
   m_Layer: 0
   m_Name: LargeLaser
   m_TagString: Laser
@@ -155,3 +156,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &799207680420723749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6844529314565309237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5faaccdd5213b44f3b8eaa2fd28adfd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cylinder: {fileID: 0}
+  moveSpeed: 5
+  detectionRadius: 10
+  damageAmount: 10

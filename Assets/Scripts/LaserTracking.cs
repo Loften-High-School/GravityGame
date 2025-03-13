@@ -34,14 +34,5 @@ public class LaserScript : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
 
-    // Detect collision with player and apply damage
-    private void OnCollisionEnter(Collision collision)
-    {
-        // Check if the enemy collides with the player
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            // Get the PlayerHealth script and apply damage
-           Destroy (gameObject);
-        }
-    }
+    // Detect collision with player and apply damag
 }

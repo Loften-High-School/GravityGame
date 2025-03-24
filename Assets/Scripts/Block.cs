@@ -35,13 +35,12 @@ public class Block : MonoBehaviour
     }
      void GenerateShield()
      {
-          Vector3 nextToPlayer; 
-          nextToPlayer = transform.localPosition;
-          //nextToPlayer = new Vector3 (2f,2f, 0f); 
-         
-         // = new Vector3(0, 0, 0);
-         //Vector3 NextToPlayer = playerTransform;
-         Instantiate(Shield, nextToPlayer, Quaternion.identity);//, Transform.player); 
+          Vector3 nextToPlayer; //creates the Vector 3
+          Vector3 offSet = new Vector3(0.3f, 0f,0f); //creates vector 3 of the offset so we can add it to the player vector 3
+          nextToPlayer = transform.localPosition + offSet;
+          
+       
+         Instantiate(Shield, nextToPlayer, Quaternion.identity, player.transform ); //player.transform makes it a child of player
      }
 }
 

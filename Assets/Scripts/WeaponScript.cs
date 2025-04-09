@@ -18,6 +18,9 @@ public class WeaponScript : MonoBehaviour
   }
   void Update()
   {
+    Vector3 fwd = transform.TransformDirection(Vector3.forward);
+        Debug.DrawRay(transform.position, fwd, Color.green);
+
     if (Automatic)
     {
       if (Input.GetMouseButton(0))
